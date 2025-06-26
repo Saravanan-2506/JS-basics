@@ -58,4 +58,39 @@ function findMax(a, b, c) {
 
 let a = findMax(2, 4, 1);
 console.log(a); 
+
+
+function iphone(){
+    console.log("This is IPhone");
+}
+function redmi(){
+    console.log("Redmi");
+}
+function oppo(){
+    console.log("Oppo");
+}
+iphone()
+redmi()
+oppo()
+
+
+factor = "Tom cruise"
+fmovie = "Avengers"
+fplayer = "Dhoni"
+
+function favourite(actor,movie,player){
+    let fav = `Favourite actor : ${actor} \nFavourite movie : ${movie} \nFavourite player : ${player} `;
+    return fav;
+}
+
+let fav1 = favourite(factor,fmovie,fplayer);
+console.log (fav1);
+
+function area(Length,breadth){
+    let areaOfRectangle = Length*breadth;
+    return areaOfRectangle;
+}
+
+let a1=area(15,20);
+console.log(a1);
 */
