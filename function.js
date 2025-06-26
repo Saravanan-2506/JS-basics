@@ -43,7 +43,6 @@ let v5 = EvenOrOdd("js");
 console.log(v3);
 console.log(v4);
 console.log(v5);
-*/
 
 //find maxof3
 function findMax(a, b, c) {
@@ -59,3 +58,4 @@ function findMax(a, b, c) {
 
 let a = findMax(2, 4, 1);
 console.log(a); 
+*/
