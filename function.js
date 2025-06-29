@@ -94,3 +94,14 @@ function area(Length,breadth){
 let a1=area(15,20);
 console.log(a1);
 */
+//Function inside another function
+function outer(){
+    function inner(){
+        return "Hello";
+    }
+    return inner();
+}
+
+console.log(outer());
+
+//Mini calculator with function inside function;

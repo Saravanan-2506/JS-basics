@@ -1,3 +1,4 @@
+/*
 var price = 1000;
 var product = "Book";
 var tax = 50;
@@ -11,3 +12,4 @@ var fruitPrice = 15;
 var totalPrice = count * fruitPrice; 
 console.log(fruitname);
 console.log(totalPrice);
+*/
