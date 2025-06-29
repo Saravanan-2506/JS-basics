@@ -93,7 +93,7 @@ function area(Length,breadth){
 
 let a1=area(15,20);
 console.log(a1);
-*/
+
 //Function inside another function
 function outer(){
     function inner(){
@@ -105,3 +105,69 @@ function outer(){
 console.log(outer());
 
 //Mini calculator with function inside function;
+function calculator(num1, num2, operation) {
+    function add() {
+        return num1 + num2;
+    }
+    function sub() {
+        return num1 - num2;
+    }
+    function mul() {
+        return num1 * num2;
+    }
+    function div() {
+        if (num2 === 0) {
+            return "Cannot divide by zero";
+        } else {
+            return num1 / num2;
+        }
+    }
+    function mod() {
+        return num1 % num2;
+    }
+
+    if (operation === 1) {
+        return add();
+    } else if (operation === 2) {
+        return sub();
+    } else if (operation === 3) {
+        return mul();
+    } else if (operation === 4) {
+        return div();
+    } else if (operation === 5) {
+        return mod();
+    } else {
+        return "Invalid operation";
+    }
+}
+
+while (true) {
+    console.log("Menu\n1. Calculator\n2. Exit\n");
+    let choice = parseInt(prompt("Enter your choice:"));
+
+    switch (choice) {
+        case 1: {
+            let num1 = parseFloat(prompt("Enter number 1:"));
+            let num2 = parseFloat(prompt("Enter number 2:"));
+            console.log("Operations:\n1. Add\n2. Sub\n3. Mul\n4. Div\n5. Mod");
+            let op_choice = parseInt(prompt("Enter your operation choice:"));
+            let result = calculator(num1, num2, op_choice);
+            console.log(`Result: ${result}`);
+            break;
+        }
+        case 2: {
+            console.log("Exiting program");
+            break;
+        }
+        default: {
+            console.log("Invalid input");
+            break;
+        }
+    }
+
+    if (choice === 2) {
+        break;
+    }
+}
+
+*/
