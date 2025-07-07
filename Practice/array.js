@@ -56,3 +56,25 @@ else {
 }
 
 */
+//course practice
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+let bills=[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips=[];
+let totals=[];
+for(let i =0;i<10;i++){
+    tips[i]=calcTip(bills[i]);
+    totals[i]=bills[i]+tips[i];
+}
+
+function calcAverage(arr){
+    let sum =0;
+    for(let i=0;i<arr.length;i++){
+        sum += arr[i];
+    }
+    return sum/(arr.length);
+}
+const avg = calcAverage(totals);
+console.log(avg);
