@@ -193,3 +193,71 @@ scoreDolphins = calcAverage(85,54,41);
 scoreKoalas = calcAverage(23,34,27);
 checkWinner(scoreDolphins,scoreKoalas);
 */
+
+//Functions
+
+/*
+function add(a, b) {
+  return a + b;
+}
+let x = 5;
+let y = 7;
+let sum = add(x, y);
+console.log("Sum =", sum);
+*/
+
+//Hoisted functions 
+
+/*
+let sum1=add(12,10);
+console.log(sum1);
+function add(a, b) {
+  return a + b;
+}
+*/
+
+//Function to variable
+/*
+function add(a,b){
+    return a+b;
+}
+let calcSum = add;
+console.log(calcSum(2,10));
+*/
+
+//Hoisting in func to variable 
+/*
+console.log(calcSum(2,10));
+function add(a,b){
+    return a+b;
+}
+let calcSum = add;
+*/
+
+//Function expression
+/*
+let calcSum = function(a,b){
+    return a+b
+}
+console.log(calcSum(12,20));
+*/
+
+//Hoisting function expression
+/*
+console.log(calcSum(12,20));
+let calcSum = function(a,b){
+    return a+b
+}
+*/
+
+//Arrow functions 
+/*
+let add = (a,b) => a+b;
+console.log(add(30,40));
+*/
+
+/*
+// Hoisting arrow Functions 
+console.log(add(30,40));
+let add = (a,b) => a+b;
+*/

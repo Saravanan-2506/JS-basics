@@ -108,3 +108,15 @@ let num6=800;
 console.log(num6);    //let tdz rules
 */
 
+/*
+console.log(num5);
+var num5 = 300;         //var tdz rules
+console.log(num5);
+*/
+
+//NaN - Not a Number
+/*
+let num8=NaN;
+console.log(num8==NaN);
+console.log(Number.isNaN(NaN));  
+*/
