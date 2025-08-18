@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Practice</title>
+</head>
+<body>
+    <h1 id ="Header">Practice DOM</h1>
+    <hr>
+    <div id="Division1">
+
+    </div>
+</body>
+<script>
+    console.log(document);
+    let element = document.getElementById('Division1');
+    element.innerHTML='<p>I am practicing JS DOM</p>';
+    element.style.color='red';
+    element.style.textAlign='center';
+    
+    let element1 = document.getElementById('Header');
+    element1.style.textAlign='center';
+    element1.style.fontFamily='sans seriff';
+
+</script>
+</html>
