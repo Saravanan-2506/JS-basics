@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>DOM Practice</title>
+    <style>
+
+    </style>
   </head>
   <body>
     <div>
@@ -31,7 +34,18 @@
       <p>Fear-Face Everything And Rise</p>
       <p>Never let yourself down</p>
     </div>
-
+    <cont>
+      <h3>Just an random container</h3>
+    </cont>
+    <ul id="menu">
+      <li><h3>For a healthy lifestyle</h3></li>
+      <li>Fruits</li>
+      <li>Vegetables</li>
+      <li>Nuts</li>
+    </ul>
+    <p id = "randPara">
+      Hello its me!!
+    </p>
     <script>
       // let cont = document.getElementById("container");
       // let cont1 = cont.getElementsByClassName("heading");
@@ -65,6 +79,18 @@
       // let text2 = document.querySelector(".second");
       // console.log(text2.previousElementSibling);
       // console.log(text2.nextElementSibling);
+      // let var7 = document.createElement("cont");
+      // var7.innerHTML = "<p>Newly created element by DOM</p>";
+      // document.body.appendChild(var7);
+      // console.log(var7);
+      // let menu = document.getElementById('menu');
+      // let list = document.createElement("li");
+      // list.innerHTML="Say no to junk food";
+      // menu.appendChild(list);
+      // console.log(menu.textContent);
+      let randPara = document.getElementById('randPara');
+      randPara.textContent = "Hello!! Nice to meet you"
+      
     </script>
   </body>
 </html>
