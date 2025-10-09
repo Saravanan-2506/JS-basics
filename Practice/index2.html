@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouseover Effect</title>
+  <script>
+    function changeStyle() {
+      document.getElementById("text").style.color = "red";
+      document.getElementById("text").style.fontSize = "24px";
+      document.getElementById("img").src = "image.png"; // New image
+    }
+    function resetStyle() {
+      document.getElementById("text").style.color = "black";
+      document.getElementById("text").style.fontSize = "16px";
+      document.getElementById("img").src = "image.png";
+    }
+  </script>
+</head>
+<body style="background-color: lightcoral;">
+  <h2 id="text" onmouseover="changeStyle()" onmouseout="resetStyle()">Hover Over Me!</h2>
+  <img id="img" src="Dhoni.png" width="150">
+</body>
+</html>
