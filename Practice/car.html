@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Class</title>
+  <script>
+    class Car {
+      constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+      }
+      start() { return `${this.make} ${this.model} started.`; }
+      stop() { return `${this.make} ${this.model} stopped.`; }
+      accelerate() { return `${this.make} ${this.model} is accelerating!`; }
+    }
+
+    function displayCar() {
+      let car = new Car("Audi", 1909);
+      document.getElementById("output").innerHTML =
+        car.start() + "<br>" + car.accelerate() + "<br>" + car.stop();
+    }
+  </script>
+</head>
+<body style="background-color:lightcoral;">
+  <h2>Car Class</h2>
+  <button onclick="displayCar()">Run Car Methods</button>
+  <p id="output"></p>
+</body>
+</html>
