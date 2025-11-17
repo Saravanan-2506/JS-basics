@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script>
+        function checkForNumber(){
+        const form = document.forms['myForm']['num1'].value;
+        if(form<1 || form>25){
+            alert('Enter a number between 1 and 25');
+        }
+        else{
+            alert('Submission successful');
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="return checkForNumber()">
+        <label for = num1>Enter a number:</label>
+        <input type="number" name="num1"> 
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
