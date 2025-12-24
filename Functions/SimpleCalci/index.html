@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calci</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h2 id="main-heading">Simple Calculator</h2>
+
+      <div id="calci">
+        <input name='num1' type="number" placeholder="Enter first number" required/><br /><br />
+        <input name='num2' type="number" placeholder="Enter second number" required/><br /><br />
+        <label for="operator">Choose your operation</label>
+        <select name="operator" id="operator">
+          <option value="+">ADD</option>
+          <option value="-">SUB</option>
+          <option value="*">MUL</option>
+          <option value="/">DIV</option>
+          <option value="%">MOD</option>
+          <option value="^">POW</option></select
+        ><br /><br />
+
+        <button>Calculate</button>
+      </div>
+    </main>
+    <script type="modules" src="script.js"> </script>
+  </body>
+</html>
